@@ -1,0 +1,11 @@
+{
+  "name": "omnixs",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^6.0.2"
+  }
+}
