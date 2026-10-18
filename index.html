@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#02050f">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="OMNIXS AI">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https: wss:; base-uri 'none'; form-action 'none'; object-src 'none'">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700&family=Noto+Sans+JP:wght@500&display=swap">
+<link rel="stylesheet" href="style.css?v=d41a7b22">
+<title>OMNIXS AI · O.A.M.I</title>
+</head>
+<body>
+<canvas id="matrix" aria-hidden="true"></canvas>
+<div class="aurora" aria-hidden="true"></div>
+<div id="app">
+  <header class="top">
+    <button class="navtog" data-act="navtog" aria-label="Open menu">☰</button>
+    <div class="brand">
+      <img class="logo" src="logo-128.png" width="40" height="40" alt="OMNIXS logo">
+      <div><b>OMNIXS</b><small>AI MARKET INTELLIGENCE · O.A.M.I</small></div>
+    </div>
+    <nav class="pills" id="pills"></nav>
+    <div class="top-right">
+      <button class="chip vmode" id="vmbtn" data-act="vmode" title="Switch desktop / mobile view">AUTO</button>
+      <button class="chip" data-act="matrix" title="Toggle matrix rain">MATRIX</button>
+      <span class="livepill st-wn" id="stat"><i></i><span id="statt">OFFLINE</span></span>
+      <div class="clock"><b id="clk">--:--:--</b><small id="clkd"> </small></div>
+      <span class="conn off" id="conn"><i></i><span id="connt">No feed</span></span>
+      <button class="who" data-go="settings" id="who"><span class="av" id="av">OP</span><span><b id="whon">Operator</b><small id="whob">PAPER</small></span></button>
+    </div>
+  </header>
+  <div class="ticker" id="ticker" aria-label="Prices"></div>
+  <div class="workspace">
+    <aside class="side" id="side">
+      <nav class="sidenav" id="sidenav"></nav>
+      <div class="sys" id="sys"></div>
+    </aside>
+    <main id="view"></main>
+  </div>
+</div>
+<nav class="dock" id="dock" aria-label="Primary"></nav>
+<div class="drawer" id="drawer" hidden><div class="sheet" id="sheet"></div></div>
+<noscript><p style="padding:20px">OMNIXS AI needs JavaScript.</p></noscript>
+<script src="engines.js?v=d41a7b22"></script>
+<script src="calendar.js?v=d41a7b22"></script>
+<script src="app.js?v=d41a7b22"></script>
+<script src="ui.js?v=d41a7b22"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "OMNIXS AI · O.A.M.I",
+  "short_name": "OMNIXS",
+  "description": "Omnixs AI Market Intelligence. Live tape, options, agents, macro calendar, and a guarded paper ledger.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#02050f",
+  "theme_color": "#02050f",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
